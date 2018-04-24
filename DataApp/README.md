@@ -38,7 +38,7 @@ How to run:
 	3. Go into the repo
 	4. Go into the directory with manage.py and run 'python manage.py runserver'
 	5. Use the local address and make sure to include '/table' at the end of the url
-	   Should be " "
+	   The linked should be "http://127.0.0.1:8000/table/#"
 
 How to add more fields:
 	- Edit models.py to include more variables
