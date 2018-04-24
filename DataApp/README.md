@@ -46,6 +46,7 @@ How to add more fields:
 
 Future Features:
 	-Fix the linking to the database situation so that data is properly displayed
+		-Test search function and edge cases once that happens
 	-Include a sort feature in addition to search, especially useful for sales_price
 	-Provide a visual display which will include charts and graphs of the average and means
 	-Write function to calculate mean and average for specific countries and models
