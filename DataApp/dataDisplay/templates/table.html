@@ -56,47 +56,46 @@ function myFunction() {
           <li class="nav-item">
             <a class="nav-link" href="#">Data Table</a>
           </li>
-		</ul>
-		{% if user.is_authenticated %}
-			<li class="nav navbar-nav navbar-right">
+    </ul>
+    {% if user.is_authenticated %}
+      <li class="nav navbar-nav navbar-right">
               <h6 style="color:white">Logged in as: {{ user.username }}</h6>
             </li>
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <!-- alignment members -->
-		    <li class="nav navbar-nav navbar-right">
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <!-- alignment members -->
+        <li class="nav navbar-nav navbar-right">
               <a class="nav-link" href="#">Logout</a>
             </li>
-		{% else %}
-		<li class="nav navbar-nav navbar-right">
-		</li>
-		{% endif %}
+    {% else %}
+    <li class="nav navbar-nav navbar-right">
+    </li>
+    {% endif %}
       </div>
     </nav>
-	<br>
+  <br>
 <!-- Data Table and where it needs to be edited to add more fields -->
 <h1 style="color:black;" align="center">Data Table</h1>
-	<br>
+  <br>
 
 <div id="padder" align="center">
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by Country...">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Country...">
 
 <table id="myTable">
   <tr class="header">
-    <th style="width:20%;">ID</th>
-      <th style="width:20%;">Import Country</th>
-    <th style="width:20%;">Model</th>
+    <th style="width:20%;">Id</th>
+    <th style="width:20%;">Import Country</th>
+  <th style="width:20%;">Model</th>
     <th style="width:20%;">Make</th>
     <th style="width:20%;">Seller</th>
-    <th style="width:20%;">Sale Price</th>
+    <th style="width:20%;">Price</th>
   </tr>
   {% for item in query_results %}
   <tr>
-    <td>{{ item.ID }}</td>
+    <td>{{ item.id }}</td>
     <td>{{ item.import_country }}</td>
-      <td>{{ item.model }}</td>
-      <td>{{ item.make }}</td>
-      <td>{{ item.sold_by }}</td>
-      <td>{{ item.sale_price }}</td>
-
+  <td>{{ item.model }}</td>
+  <td>{{ item.make }}</td>
+  <td>{{ item.sold_by }}</td>
+  <td>{{ item.sales_price }}</td>
   </tr>
   {% endfor %}
 </table>

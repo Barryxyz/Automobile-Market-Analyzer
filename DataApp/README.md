@@ -37,7 +37,8 @@ How to run:
 	2. Download repo 
 	3. Go into the repo
 	4. Go into the directory with manage.py and run 'python manage.py runserver'
-	5. Use the local address
+	5. Use the local address and make sure to include '/table' at the end of the url
+	   Should be " "
 
 How to add more fields:
 	- Edit models.py to include more variables
