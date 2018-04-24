@@ -25,7 +25,7 @@ SECRET_KEY = 'rtn_7(#r#+=auq2_vtja$=5%$dbh%inn!5+fbm9chvsig)&y5&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'dataDisplay'
 ]
 
 MIDDLEWARE = [
