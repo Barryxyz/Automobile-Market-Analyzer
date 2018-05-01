@@ -1,8 +1,10 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 # Creates the imports object and tries to self reference itself with json
-class imports(models.Model):
+class Sale(models.Model):
+    ID = models.CharField(max_length=30)
     import_country = models.CharField(max_length=30)
     model = models.CharField(max_length=30)
     make = models.CharField(max_length=30)

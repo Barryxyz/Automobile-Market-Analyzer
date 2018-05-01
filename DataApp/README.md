@@ -16,10 +16,11 @@ Design:
 			- Displays the data in an easier to read format than the database
 		-Includes a search bar 
 			- Used to filter out models and countries
-			- However, will not be able to filter price
+			- However, will not be able to filter price (a sort is needed)
 
 Complications:
-	- Database was referecing the local table rather than the customly created one, so the table appears empty 
+	- Had trouble referencing the API so local database was used
+	- Need to somehow make the search bar multipurpose or make the search by model work (seach may be limited to only one field)
 	- Should have asked more questions about clients preferences such as mobile vs pc
 	- Needed more front and back communication to ensure that the right product is being built 
 	- More fields definitely need to be added because there is insufficient information to calculate profit
@@ -31,6 +32,7 @@ Process:
 	4. Wrote the html file along with create model objects of imports
 	5. Create the table within html and a function to search through
 	6. Attempted to call values from the databased but failed
+	7. Ended up manually creating Sale objects to properly show the front end
 
 How to run:
 	1. Make sure Django and Python is properly installed
@@ -46,8 +48,7 @@ How to add more fields:
 	- Go to table.html to add a column to the table on the page and pull another field within the table for loop
 
 Future Features:
-	-Fix the linking to the database situation so that data is properly displayed
-		-Test search function and edge cases once that happens
+	-Correctly implement the web API so that all data is displayed
 	-Include a sort feature in addition to search, especially useful for sales_price
 	-Provide a visual display which will include charts and graphs of the average and means
 	-Write function to calculate mean and average for specific countries and models

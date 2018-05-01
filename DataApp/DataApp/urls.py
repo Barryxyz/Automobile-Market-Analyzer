@@ -22,5 +22,6 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^table/', views.table, name='table')
+    url(r'^table/', views.table, name='table'),
+    # url(r'^load_table/', views.load_imports, name='load_imports')
 ]
