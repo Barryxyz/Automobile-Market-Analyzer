@@ -1,7 +1,4 @@
-# VandelayIndustries
-Mock Technical Interview Response
-
-#Easier to read with a text editor
+# Automobile Market Analyzer
 
 Requirements:
 	- Must be able to help the client identify which Markets and models are most profitable
