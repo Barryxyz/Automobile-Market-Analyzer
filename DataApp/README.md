@@ -1,4 +1,5 @@
 # Automobile Market Analyzer
+Web App that displays mock data about sales based on vehicle factors such as make, year, model to maximize profit for auto-makers
 
 Requirements
 - Must be able to help the client identify which Markets and models are most profitable
